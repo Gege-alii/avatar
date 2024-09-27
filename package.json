@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build": "node --no-sandbox node_modules/.bin/ng build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "homepage": "https://Gege-alii.github.io/avatar",
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
@@ -20,6 +23,7 @@
     "@angular/router": "^16.2.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "bootstrap": "^5.3.1",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.7.1",
     "jQuery": "^1.7.4",
     "rxjs": "~7.8.0",
