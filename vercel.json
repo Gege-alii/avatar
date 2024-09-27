@@ -1,8 +1,11 @@
 {
+    
     "builds": [
+
+        
       {
-        "src": "src/**/*",
-        "use": "@vercel/static-build",
+       "src": "path/to/your/package.json", 
+      "use": "@vercel/angular",
         "config": {
           "distDir": "dist"
         }
