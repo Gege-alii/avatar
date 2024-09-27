@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "homepage": "https://Gege-alii.github.io/avatar",
+  "homepage": "http://Gege-alii.github.io/avatar/",
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",

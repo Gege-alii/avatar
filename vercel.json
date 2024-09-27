@@ -1,21 +1,15 @@
 {
-    
-    "builds": [
-
-        
-      {
-       "src": "path/to/your/package.json", 
-      "use": "@vercel/angular",
-        "config": {
-          "distDir": "dist"
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/avatar/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
